@@ -1,0 +1,7 @@
+# this will be helpful in the future if implenting specific connections to other platforms
+.env
+.env.*
+# do not ignore. the example env file!
+!.env.example
+
+.vscode/
