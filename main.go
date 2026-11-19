@@ -8,6 +8,15 @@ import (
 
 func main() {
 	puzzles := sudoku_solver.Getdata(2)
-	fmt.Println(len(puzzles[0].Puzzle), len(puzzles[0].Solution), len(puzzles[1].Puzzle), len(puzzles[1].Solution))
-	fmt.Println("here we will solve sudoku!")
+
+
+	fmt.Println("Puzzles output")
+	fmt.Println(puzzles)
+
+	fmt.Println("\nPuzzle lens")
+	fmt.Println(len(puzzles[0].Puzzle), len(puzzles[0].Solution))
+
+	fmt.Println("\nSolve output")
+	fmt.Println(sudoku_solver.Solve(puzzles[0].Puzzle))
+	fmt.Println("\nhere we will solve sudoku!")
 }
