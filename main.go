@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
+	fmt.Println(sudoko_data_importer.Getdata(-1))
 	fmt.Println("here we will solve sudoku!")
-	fmt.Println(sudoko_solver.Add(4, 5))
 }
