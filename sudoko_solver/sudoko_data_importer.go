@@ -1,4 +1,4 @@
-package sudoko_data_importer
+package sudoku_solver
 
 import (
 	"log"
@@ -31,7 +31,7 @@ func Getdata( amount int ) []Puzzle {
 		rand.Shuffle(len(puzzles), func( i, j int ) {
 			puzzles[i], puzzles[j] = puzzles[j], puzzles[i]
 		})
-		puzzles = puzzles[1:amount+1]
+		puzzles = puzzles[0:amount]
 	}
 
 	return puzzles
