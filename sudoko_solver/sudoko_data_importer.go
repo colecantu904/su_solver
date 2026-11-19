@@ -13,7 +13,7 @@ type Puzzle struct {
 	Difficulty string `json:"difficulty"`
 }
 
-// pass -1 for all, or pass n for at most n puzzles
+// pass -1 for all, or pass n for at most n random puzzles
 func Getdata( amount int ) []Puzzle {
 	var puzzles []Puzzle
 
